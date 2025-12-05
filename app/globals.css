@@ -34,3 +34,42 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.ai-border-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+/* The moving edge line */
+.ai-border-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;          /* pill shape */
+  padding: 2px;                   /* line thickness */
+  background: linear-gradient(90deg, transparent, var(--color-primary)
+, transparent);
+  background-size: 200% 100%;
+  
+  /* Show only the border, cut out the center */
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+
+  opacity: 0;
+  transition: opacity 0.25s ease-out;
+}
+
+/* On hover: show and move the line */
+.ai-border-btn:hover::before {
+  opacity: 1;
+  animation: ai-border-move 1.5s linear infinite;
+}
+
+@keyframes ai-border-move {
+  to {
+    background-position: -200% 0;
+  }
+}
