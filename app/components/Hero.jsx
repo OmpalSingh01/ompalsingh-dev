@@ -173,7 +173,7 @@ export const Hero = () => {
   <div className="flex items-center gap-3">
     {/* Dribbble */}
     <a
-      href="https://dribbble.com"
+      href="https://dribbble.com/ompalsingh01"
       target="_blank"
       rel="noreferrer"
       className="flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 bg-white hover:bg-gray-50 hover:border-gray-400 transition-all duration-300"
@@ -183,7 +183,7 @@ export const Hero = () => {
 
     {/* Behance */}
     <a
-      href="https://www.behance.net"
+      href="https://www.behance.net/mohitsingh448"
       target="_blank"
       rel="noreferrer"
       className="flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 bg-white hover:bg-gray-50 hover:border-gray-400 transition-all duration-300"
@@ -193,7 +193,7 @@ export const Hero = () => {
 
     {/* GitHub */}
     <a
-      href="https://github.com"
+      href="https://github.com/OmpalSingh01"
       target="_blank"
       rel="noreferrer"
       className="flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 bg-white hover:bg-gray-50 hover:border-gray-400 transition-all duration-300"
@@ -203,7 +203,7 @@ export const Hero = () => {
 
     {/* LinkedIn */}
     <a
-      href="https://www.linkedin.com"
+      href="https://www.linkedin.com/in/ompal-singh"
       target="_blank"
       rel="noreferrer"
       className="flex h-9 w-9 items-center justify-center rounded-full border border-gray-200 bg-white hover:bg-gray-50 hover:border-gray-400 transition-all duration-300"
@@ -226,7 +226,7 @@ export const Hero = () => {
       Experience
     </p>
     <p className="mt-1 text-lg md:text-xl font-semibold text-gray-900">
-      1+ <span className="text-sm font-medium text-gray-500">Years</span>
+      01+ <span className="text-sm font-medium text-gray-500">Years</span>
     </p>
   </div>
 
@@ -236,7 +236,7 @@ export const Hero = () => {
       Projects
     </p>
     <p className="mt-1 text-lg md:text-xl font-semibold text-gray-900">
-      20+ <span className="text-sm font-medium text-gray-500">Shipped</span>
+      06+ <span className="text-sm font-medium text-gray-500">Shipped</span>
     </p>
   </div>
 

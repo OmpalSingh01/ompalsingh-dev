@@ -26,11 +26,11 @@ export const About = () => {
   const testimonials = [
   {
     quote:
-      "Om understood our requirements quickly and delivered a clean, modern website that performs great on all devices. Communication was smooth and the project was completed before the deadline.",
-    name: "Anand Sharma",
-    role: "Founder",
+      "Om quickly understood our requirements and delivered a clean, modern website with excellent UI/UX that performs flawlessly across all devices. Communication was smooth throughout, and the project was completed ahead of schedule. Highly professional and reliable.",
+    name: "Anand Srivastava",
+    role: "Head of Training & Development",
     company: "ClassBoxes",
-    logo: "/assets/logos/classboxes.png", // update path
+    logo: "/assets/Testimonials/classboxes.jpeg", // update path
   },
   {
     quote:
@@ -42,11 +42,11 @@ export const About = () => {
   },
   {
     quote:
-      "Very professional and reliable. The project was delivered on time with excellent communication throughout. Highly recommended for frontend work.",
-    name: "Rahul Singh",
-    role: "Co-founder",
-    company: "PixelHive Studio",
-    logo: "/assets/logos/pixelhive.png", // update path
+      "Highly professional and reliable, with timely delivery of the feature and excellent communication throughout the project. The frontend implementation was clean, efficient, and well-optimized. Strongly recommended for frontend development work.",
+    name: "Tushar Langer",
+    role: "Founder & CEO",
+    company: "GoBasera",
+    logo: "/assets/Testimonials/gobasera.jpeg", // update path
   },
 
  
@@ -421,7 +421,7 @@ export const About = () => {
                   </div>
 
                   {/* Quote */}
-                  <p className="text-gray-800 text-sm md:text-content leading-relaxed mb-4 relative z-10">
+                  <p className="text-gray-500 text-sm md:text-content leading-relaxed mb-4 relative z-10">
                     “{t.quote}”
                   </p>
 

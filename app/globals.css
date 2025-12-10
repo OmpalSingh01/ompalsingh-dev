@@ -1,39 +1,65 @@
 @import "tailwindcss";
 
-/* Basic CSS Setup */
+/* ================== THEME SYSTEM ================== */
 
-/* Colors , start custom color*/
+:root {
+  /* ---- LIGHT MODE ---- */
+  --color-primary: #2563eb;
+  --color-secondary: #6366f1;
+  --color-accent: #22c55e;
 
-@theme{
-  --color-primary : #8f56cc;
-  --color-secondary: #5d4ec4;
-  --color-base : #e6ebf4;
-  --color-content: #22232c;
-  --color-content-alter: #717586;
-  --color-outer : #d1d5e0;
-
+  --color-base: #f8fafc;
+  --color-content: #0f172a;
+  --color-content-alter: #64748b;
+  --color-outer: #e2e8f0;
 }
+
+/* ---- DARK MODE AUTO ---- */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: #38bdf8;
+    --color-secondary: #818cf8;
+    --color-accent: #22c55e;
+
+    --color-base: #020617;
+    --color-content: #e5e7eb;
+    --color-content-alter: #94a3b8;
+    --color-outer: #1e293b;
+  }
+}
+
+/* ================== BASE ================== */
 
 @layer base {
-  html{
+  html {
     @apply scroll-smooth scroll-pt-24;
   }
-  body{
-    @apply bg-base text-content;
+  body {
+    background-color: var(--color-base);
+    color: var(--color-content);
   }
 }
 
-.custom-gradient{
-  background: linear-gradient(135deg, #8f56cc 0%, #5d4ec4 100%);
+/* ================== GRADIENTS ================== */
+
+.custom-gradient {
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-secondary)
+  );
 }
 
-.text-gradient{
-  color: #8f56cc;
-  background: #8f56cc;
-  background: -webkit-linear-gradient(15deg, #8f56cc 0%, #5d4ec4 100%);
+.text-gradient {
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-secondary)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 
 .ai-border-btn {
   position: relative;
@@ -73,3 +99,4 @@
     background-position: -200% 0;
   }
 }
+

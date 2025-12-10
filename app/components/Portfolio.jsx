@@ -9,39 +9,39 @@ export const Portfolio = () => {
   const projects = [
     {
       id: 1,
-      title: "Project One",
-      image: "/assets/portfolio-1.png",
-      tags: ["React", "Node.js", "Full Stack"],
+      title: "Artiq AI - Text to Image AI SaaS App",
+      image: "/assets/Project/artiq.png",
+      tags: ["React", "Node.js", "JavaScript", "API"],
       role: "Full-Stack Development",
       description:
-        "A performant full-stack web app focused on seamless UX and responsive design.",
-      liveUrl: "#", // replace with your live link
-      codeUrl: "#", // replace with your GitHub link
+        "Artiq AI is a powerful Text-to-Image SaaS platform that transforms ideas into high-quality visuals in seconds. Built for creators, designers, and businesses to generate stunning AI images effortlessly.",
+      liveUrl: "https://artiq-three.vercel.app/", // replace with your live link
+      codeUrl: "https://github.com/OmpalSingh01/Artiq-AI", // replace with your GitHub link
       category: "fullstack", // ✅ slug (no space, lowercase)
     },
     {
       id: 2,
-      title: "Project Two",
-      image: "/assets/portfolio-2.png",
-      tags: ["Next.js", "Tailwind CSS", "SSR"],
-      role: "Frontend & Performance",
+      title: "Epic Reads - Online Bookstore",
+      image: "/assets/Project/epicreads.png",
+      tags: ["React", "Tailwind CSS", "SSR"],
+      role: "Full-Stack Development",
       description:
-        "Next.js powered interface with optimized loading, SEO-friendly structure and clean UI.",
-      liveUrl: "#",
-      codeUrl: "#",
-      category: "frontend", // ✅
+        "Epic Reads is a full-stack online bookstore built with the MERN stack. It provides readers with a seamless platform to browse, purchase, and manage books, featuring a modern, responsive design optimized for desktop, tablet, and mobile.",
+      liveUrl: "https://epicread1.vercel.app/",
+      codeUrl: "https://github.com/OmpalSingh01/epicreads-onlinebookstore",
+      category: "fullstack", // ✅
     },
     {
       id: 3,
-      title: "Project Three",
-      image: "/assets/portfolio-3.png",
-      tags: ["JavaScript", "CSS", "UI/UX"],
-      role: "UI / UX & Interactions",
+      title: "Prescripto - Doctor Appointment Booking System",
+      image: "/assets/Project/prescripto.png",
+      tags: ["Node.js", "Express", "JavaScript", "MongoDB"],
+      role: "Full-Stack Development",
       description:
-        "Interactive single-page experience with smooth animations and pixel-perfect layout.",
-      liveUrl: "#",
-      codeUrl: "#",
-      category: "ui", // ✅
+        "Prescripto is a full-stack doctor appointment booking system built with the MERN stack. It allows patients to book appointments, doctors to manage schedules, and admins to oversee the system with an intuitive, responsive UI.",
+      liveUrl: "https://prescripto-f.vercel.app/",
+      codeUrl: "https://github.com/OmpalSingh01/prescripto-f",
+      category: "fullstack", // ✅
     },
   ];
 
@@ -105,7 +105,7 @@ export const Portfolio = () => {
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gradient mb-3">
           Check out my featured <br className="hidden md:block" /> projects
         </h2>
-        <p className="text-sm md:text-content text-white/60 max-w-xl mx-auto">
+        <p className="text-sm md:text-content text-gray-500 max-w-xl mx-auto">
           A selection of work that highlights my focus on clean UI, smooth
           interactions, and modern web best practices.
         </p>
@@ -125,10 +125,11 @@ export const Portfolio = () => {
             onClick={() => setActiveFilter(filter.value)}
             className={`px-3.5 py-1.5 text-xs md:text-sm rounded-full border transition-colors duration-200
               ${
-                activeFilter === filter.value
-                  ? "bg-primary text-white border-primary shadow-lg shadow-primary/40"
-                  : "border-black/10 bg-white/5 text-black/70 hover:bg-primary/70 hover:text-white"
-              }`}
+  activeFilter === filter.value
+    ? "text-white border-transparent custom-gradient shadow-[0_0_25px_color-mix(in_srgb,var(--color-primary),transparent_40%)]"
+    : "border-black/10 bg-white/5 text-black/70 hover:text-white hover:bg-[color:var(--color-primary)]"
+}
+          `}
           >
             {filter.label}
           </button>
@@ -179,7 +180,7 @@ export const Portfolio = () => {
 
               {/* Category badge */}
               <div className="absolute top-4 right-4">
-                <span className="inline-flex items-center rounded-full border border-white/20 bg-white/10 px-2.5 py-1 text-[11px] uppercase tracking-wide text-white/80">
+                <span className="inline-flex items-center rounded-full border border-white/20 bg-black/10 px-2.5 py-1 text-[11px] uppercase tracking-wide text-white/80">
                   {project.category === "frontend" && "Frontend"}
                   {project.category === "fullstack" && "Full Stack"}
                   {project.category === "ui" && "UI / UX"}
@@ -241,7 +242,7 @@ export const Portfolio = () => {
                   </div>
 
                   {/* Small index badge */}
-                  <span className="shrink-0 h-8 w-8 rounded-full border border-white/20 bg-white/5 flex items-center justify-center text-[11px] text-white/70">
+                  <span className="shrink-0 h-8 w-8 rounded-full border border-white/20 bg-white/5 flex items-center justify-center text-[11px] text-white">
                     #{project.id.toString().padStart(2, "0")}
                   </span>
                 </div>
@@ -267,14 +268,19 @@ export const Portfolio = () => {
         className="mt-10 md:mt-12 flex justify-center"
       >
         <a
-          href="https://github.com/your-username" // replace with your GitHub
-          target="_blank"
-          rel="noreferrer"
-          className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-5 py-2.5 text-sm md:text-base text-white/80 hover:bg-white hover:text-black transition-colors duration-200"
-        >
-          <FiGithub className="text-lg" />
-          <span>View all projects on GitHub</span>
-        </a>
+  href="https://github.com/your-username"
+  target="_blank"
+  rel="noreferrer"
+  className="inline-flex items-center gap-2 rounded-full border border-black/15 
+             bg-white px-5 py-2.5 text-sm md:text-base 
+             text-black
+             hover:bg-black hover:text-white
+             transition-all duration-200"
+>
+  <FiGithub className="text-lg" />
+  <span>View all projects on GitHub</span>
+</a>
+
       </motion.div>
     </section>
   );
