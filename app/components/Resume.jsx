@@ -10,56 +10,75 @@ export const Resume = () => {
   // Education Array
   const education = [
     {
-      year: "2020 - 2024",
-      title: "Bachelor of Technology in Computer Science",
-      institution: "ABC University, India",
+      year: "2023 - 2025",
+      title: "Master of Computer Applications",
+      institution: "Kamla Nehru Institute of Technology, Sultanpur, India",
+      location: "Sultanpur, UP, India",
       description:
-        "Studied core computer science subjects including algorithms, data structures, databases, and web development. Graduated with honors.",
-      logo: "/assets/KNIT.png",
+        "Advanced coursework in full-stack development, distributed systems, and cloud-native architectures. Built production-ready MERN applications with scalable APIs, real-time data handling, and end-to-end deployment pipelines.",
+      logo: "/assets/Logo/KNIT.png",
+    },
+    {
+      year: "2020 - 2023",
+      title: "Bachelor of Computer Applications",
+      institution: "UIET CSJM University, Kanpur, India",
+      location: "CSJMU Campus, Kanpur, India",
+      description:
+        "Completed foundational coursework in computer science, software development, and database management, with practical experience in building web applications and applying core programming concepts. Gained strong fundamentals in algorithms, data structures, and system design principles.",
+      logo: "/assets/Logo/csjmu.png",
     },
     {
       year: "2018 - 2020",
       title: "Higher Secondary Education",
-      institution: "XYZ School, India",
+      institution: "Kendriya Vidyalaya IIT Kanpur, India",
+      location: "IIT Kanpur Campus, India",
       description:
-        "Completed higher secondary education with a focus on science and mathematics. Achieved top grades in all subjects.",
-      logo: "/logos/xyz-school.png",
+        "Completed higher secondary education with a focus on Mathematics and Computer Science, building strong analytical, logical reasoning, and problem-solving skills. Developed early proficiency in programming fundamentals and digital technologies.",
+      logo: "assets/Logo/kv.png",
     },
     {
-      year: "2016 - 2018",
+      year: "2015 - 2017",
       title: "Secondary Education",
-      institution: "ABC High School, India",
+      institution: "Kendriya Vidyalaya IIT Kanpur, India",
+      location: "IIT Kanpur Campus, India",
       description:
-        "Completed secondary education with a focus on science and mathematics. Participated in various extracurricular activities.",
-      logo: "/logos/abc-highschool.png",
+        "Completed secondary education with a solid academic foundation across core subjects, strengthening quantitative aptitude, communication skills, and overall academic discipline.",
+      logo: "assets/Logo/kv.png",
     },
   ];
 
   // Experience Array
   const workData = [
     {
-      year: "2022 - Present",
+      year: "OCT 2025 - Present",
+      title: "Software Engineer Intern",
+      location: "Remote, Hyderabad, India",
+      company: "Go Basera",
+      description:
+        "I designed and implemented a multi-step user onboarding workflow to improve first-time activation while independently delivering two full production-grade features from requirement analysis to deployment. Additionally, I contributed to three core system features and resolved multiple critical hotfixes to enhance platform stability. I also implemented Playwright end-to-end testing and integrated Razorpay to enable secure staged payment processing.",
+      stack: ["React.js", "Next.js", "TypeScript", "Tailwind CSS", "Node.js", "Docker", "Git", "Swagger", "Postman", "Playwright"],
+      logo: "assets/Logo/gobasera.jpeg",
+    },
+    {
+      year: "OCT 2025 - Present",
+      title: "Freelance Frontend Developer",
+      location: "Remote, New Jersey, USA",
+      company: "Classboxes Technologies",
+      description:
+        "I delivered 45+ personalized portfolio websites for students, professionals, and job seekers, optimizing performance and SEO to improve visibility, Lighthouse scores, and overall loading speed. I designed UI/UX wireframes in Figma and converted them into fully responsive, pixel-perfect interfaces. Additionally, I customized WordPress portfolio themes using PHP and integrated dynamic content features to enhance user experience and maintainability.",
+      stack: ["React.js", "Tailwind CSS", "HTML5", "CSS3", "PHP", "WordPress", "Laravel", "Figma"],
+      logo: "assets/Logo/classboxes.jpeg",
+    },
+    
+    {
+      year: "JUN 2024 - AUG 2024",
       title: "Frontend Developer Intern",
-      company: "Tech Solutions Pvt Ltd",
+      location: "Kanpur, India",
+      company: "FR Web Solutions",
       description:
-        "Worked on developing responsive web applications using React and Tailwind CSS. Collaborated with designers and backend developers to implement new features.",
-      logo: "/logos/tech-solutions.png",
-    },
-    {
-      year: "2021 - 2022",
-      title: "Junior Web Developer",
-      company: "Web Creators Inc",
-      description:
-        "Assisted in the development and maintenance of client websites. Gained experience in HTML, CSS, JavaScript, and version control using Git.",
-      logo: "/logos/web-creators.png",
-    },
-    {
-      year: "2020 - 2021",
-      title: "IT Support Assistant",
-      company: "XYZ Corporation",
-      description:
-        "Provided technical support to employees, troubleshooting hardware and software issues. Assisted in setting up new workstations and maintaining IT inventory.",
-      logo: "/logos/xyz-corp.png",
+        "I developed responsive user interfaces using React.js and Bootstrap, ensuring mobile-first design and cross-browser compatibility. I integrated frontend components with backend REST APIs while following Git-based collaborative workflows. Additionally, I improved UI performance and resolved cross-browser rendering issues to deliver a consistent and optimized user experience.",
+      stack: ["React.js", "JavaScript", "CSS3", "Bootstrap", "Git", "GitHub"],  
+      logo: "assets/Logo/fr.jpg",
     },
   ];
 
@@ -269,6 +288,17 @@ export const Resume = () => {
                         >
                           {item.year}
                         </span>
+                          <span
+                        className="px-2 py-0.5 text-xs font-medium rounded-full"
+                        style={{
+                          border: "1px solid color-mix(in srgb, var(--color-primary) 40%, transparent)",
+                          color: "var(--color-primary)",
+                        }}
+                      >
+                        {item.location}
+                      </span>
+
+
                         <span
                           className="inline-flex text-[11px] font-medium rounded-full px-2 py-0.5"
                           style={{
@@ -296,6 +326,18 @@ export const Resume = () => {
                       >
                         {item.description}
                       </p>
+
+                      <p className="text-xs md:text-sm font-medium"
+                        style={{ color: "var(--color-content-alter)" }}
+                      >
+                        {item.stack && item.stack.length > 0 && (
+                          <>
+                            <span className="font-semibold">Tech Stack:</span>{" "}
+                            {item.stack.join(", ")}
+                          </>
+                        )}
+                      </p>
+
                     </div>
                   </div>
                 </div>
@@ -345,7 +387,7 @@ export const Resume = () => {
             }}
           >
             <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
-            3+ Years Learning &amp; Building
+            5+ Years Learning &amp; Building
           </span>
           <span
             className="inline-flex items-center gap-1 rounded-full px-3 py-1"
@@ -356,7 +398,7 @@ export const Resume = () => {
             }}
           >
             <span className="h-1.5 w-1.5 rounded-full bg-sky-400" />
-            Frontend · MERN · UI Focus
+            Full-Stack · MERN · UI/UX Focus
           </span>
         </div>
       </motion.div>

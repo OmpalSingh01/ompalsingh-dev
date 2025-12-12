@@ -151,7 +151,7 @@ export const Hero = () => {
           <a href="#portfolio" className='custom-gradient w-full md:w-auto py-3 px-8 text-white rounded-full font-semibold flex items-center justify-center gap-2 hover:opacity-90 transition-opacity duration-300'> My Work <HiOutlineViewGrid className='text-lg ' /></a>
 
           <a
-  href="/assets/Ompal_Singh_Resume.pdf"
+  href="/assets/Resume/OmpalSingh_CV.pdf"
   download
   className="ai-border-btn w-full md:w-auto py-3 px-8 rounded-full font-semibold bg-white text-gray-900 border border-gray-300 flex items-center justify-center gap-2 transition-shadow duration-300 hover:shadow-sm "
 >

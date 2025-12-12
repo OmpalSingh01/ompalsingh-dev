@@ -30,16 +30,18 @@ export const About = () => {
     name: "Anand Srivastava",
     role: "Head of Training & Development",
     company: "ClassBoxes",
-    logo: "/assets/Testimonials/classboxes.jpeg", // update path
-  },
-  {
-    quote:
-      "Working with Om was a great experience. He translated our ideas into a beautiful, responsive UI and paid attention to even the smallest details.",
-    name: "Sweta Verma",
-    role: "Product Manager",
-    company: "EduWave",
-    logo: "/assets/logos/eduwave.png", // update path
-  },
+    logo: "/assets/Testimonials/classboxes.jpeg",
+     // update path
+      },
+      {
+        quote:
+          "Working with Om was a great experience. He translated our ideas into a beautiful, responsive UI and paid attention to even the smallest details. The attention to performance optimization and cross-browser compatibility was impressive.",
+        name: "Sweta Verma",
+        role: "Product Manager",
+        company: "EduWave",
+        logo: "/assets/Testimonials/eduwave.png",
+      },
+      
   {
     quote:
       "Highly professional and reliable, with timely delivery of the feature and excellent communication throughout the project. The frontend implementation was clean, efficient, and well-optimized. Strongly recommended for frontend development work.",
@@ -255,7 +257,7 @@ export const About = () => {
               className="flex flex-wrap items-center gap-4 mt-6"
             >
               <a
-                href="/assets/resume.pdf"
+                href="/assets/Resume/OmpalSingh_CV.pdf"
                 download
                 className="custom-gradient py-3.5 px-7 text-white rounded-full font-semibold flex items-center justify-center gap-2 w-max hover:opacity-90 transition-opacity duration-300 shadow-lg shadow-black/10"
               >
@@ -308,7 +310,7 @@ export const About = () => {
                 <p className="text-gray-500 text-xs font-medium mb-1 uppercase tracking-[0.15em]">
                   Name
                 </p>
-                <p className="text-gray-900 text-xl font-semibold">Ompal Singh</p>
+                <p className="text-gray-900 text-l font-semibold">Ompal Singh</p>
               </motion.div>
 
               <motion.div
@@ -320,7 +322,7 @@ export const About = () => {
                 <p className="text-gray-500 text-xs font-medium mb-1 uppercase tracking-[0.15em]">
                   Phone
                 </p>
-                <p className="text-gray-900 text-xl font-semibold break-all">
+                <p className="text-gray-900 text-l font-semibold break-all">
                   +91 723-382-8073
                 </p>
               </motion.div>
@@ -334,8 +336,8 @@ export const About = () => {
                 <p className="text-gray-500 text-xs font-medium mb-1 uppercase tracking-[0.15em]">
                   Email
                 </p>
-                <p className="text-gray-900 text-xl font-semibold break-all">
-                  ompalsingh@example.com
+                <p className="text-gray-900 text-l font-semibold break-all">
+                  mohitsingh.2626452@gmail.com
                 </p>
               </motion.div>
 
@@ -348,7 +350,7 @@ export const About = () => {
                 <p className="text-gray-500 text-xs font-medium mb-1 uppercase tracking-[0.15em]">
                   Location
                 </p>
-                <p className="text-gray-900 text-xl font-semibold">
+                <p className="text-gray-900 text-l font-semibold">
                   Kanpur, India
                 </p>
               </motion.div>

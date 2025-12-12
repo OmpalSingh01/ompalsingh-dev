@@ -101,9 +101,11 @@ export const Contact = () => {
       {/* Contact Form Card */}
       <motion.form
   variants={container}
-  initial="hidden"
-  whileInView="show"
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, ease: "easeOut" }}
   viewport={{ once: true, amount: 0.25 }}
+  
   onSubmit={onSubmit}
   className="mt-8 max-w-4xl mx-auto rounded-3xl px-4 py-8 md:px-8 md:py-10 
              grid grid-cols-1 md:grid-cols-2 gap-6 border"

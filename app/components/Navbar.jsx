@@ -93,7 +93,7 @@ export const Navbar = () => {
       >
         <div className="relative h-10 w-32 md:h-12 md:w-40">
           <Image
-            src="/assets/logol.png"        // put logo.png in /public
+            src="/assets/Logo/logok.png"        // put logo.png in /public
             alt="Om Logo"
             fill                      // makes it responsive inside the div
             className="object-contain"

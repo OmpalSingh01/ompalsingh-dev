@@ -92,25 +92,25 @@ export const Footer = () => {
   const socialIcons = [
   {
     icon: FaLinkedin,
-    url: "https://www.linkedin.com/in/your-profile",
+    url: "www.linkedin.com/in/ompal-singh",
     label: "LinkedIn",
     color: "#0A66C2", // LinkedIn Blue
   },
   {
     icon: FaGithub,
-    url: "https://github.com/your-username",
+    url: "https://github.com/OmpalSingh01",
     label: "GitHub",
     color: "#181717", // GitHub Black
   },
   {
     icon: FaBehance,
-    url: "https://www.behance.net/yourprofile",
+    url: "https://www.behance.net/mohitsingh448",
     label: "Behance",
     color: "#1769FF", // Behance Blue
   },
   {
     icon: FaDribbble,
-    url: "https://dribbble.com/yourprofile",
+    url: "https://dribbble.com/ompalsingh01",
     label: "Dribbble",
     color: "#EA4C89", // Dribbble Pink
   },
@@ -160,7 +160,7 @@ export const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={social.label}
-                className="p-3 rounded-2xl border border-outer/70 bg-transparent transition-all duration-10 inline-flex items-center justify-center"
+                className="p-3 rounded-2xl border border-outer/70 bg-transparent transition-all duration-10 inline-flex items-center justify-center cursor-pointer"
                 style={{ color: social.color }}     // ✅ Real brand color
               >
                 <IconComponent className="text-xl md:text-2xl" />
