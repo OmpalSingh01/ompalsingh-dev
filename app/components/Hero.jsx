@@ -77,7 +77,7 @@ export const Hero = () => {
 
         <motion.div variants={item}>
             <Image 
-            src="/assets/profile.gif" alt="Profile Image" 
+            src="/assets/Profile/profile.gif" alt="Profile Image" 
             width={150}
             height={150}
             className='rounded-full mb-4'
